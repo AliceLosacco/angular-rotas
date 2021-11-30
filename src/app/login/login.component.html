@@ -1,0 +1,17 @@
+<h4>Login</h4>
+
+<label for="usuario"> Usuário </label>
+<div class="input-group mb-3">
+    <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<label for="senha"> Senha </label>
+<div class="input-group mb-3">
+    <input [(ngModel)]="usuario.senha" id="senha" type="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<button type="button" 
+    class="btn btn-primary"
+    (click)="fazerLogin()">
+    Login
+</button>

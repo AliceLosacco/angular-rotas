@@ -1,0 +1,24 @@
+<h3> Criar/Editar Aluno </h3>
+
+<div class="input-group mb-3">
+    <input disabled type="text" 
+    [(ngModel)]="aluno.id"
+    class="form-control" 
+    placeholder="#" 
+    aria-describedby="basic-addon1" >
+</div>
+<label class="form-label">Nome</label>
+<div class="input-group mb-3">
+    <input type="text" 
+    [(ngModel)]="aluno.nome"
+    (input)="onInput()"
+    class="form-control"  
+    aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3">
+    <input type="text" 
+    [(ngModel)]="aluno.email"
+    class="form-control" 
+    placeholder="Email" 
+    aria-describedby="basic-addon1" >
+</div>
